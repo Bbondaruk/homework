@@ -179,3 +179,30 @@ console.log(vowels.replace(/[aeiou]/g, ''))
 //     Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
 
     // Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
+
+let m = 12;
+let km = m / 1000;
+
+if (m == 0) {
+    console.log(m, 'метрів це', km, 'кілометрів')
+} else if (km > 0 && km < 1) {
+    if (m.toString().endsWith('11') || m.toString().endsWith('12') || m.toString().endsWith('13') || m.toString().endsWith('14')) {
+        console.log(m, 'метрів це', km, 'кілометра')
+    }
+    else if (m.toString().endsWith('1')) {
+        console.log(m, 'метр це', km, 'кілометра')
+    } else if (m.toString().endsWith('2') || m.toString().endsWith('3') || m.toString().endsWith('4')) {
+        console.log(m, 'метри це', km, 'кілометра')
+    } else {
+        console.log(m, 'метрів це', km, 'кілометра')
+    }
+} else if(m.toString().endsWith('11') || m.toString().endsWith('12') || m.toString().endsWith('13') || m.toString().endsWith('14')) {
+    console.log(m, 'метрів це', km, 'кілометрів')
+}
+else if (m.toString().endsWith('1')) {
+    console.log(m, 'метр це', km, 'кілометр')
+} else if (m.toString().endsWith('2') || m.toString().endsWith('3') || m.toString().endsWith('4')) {
+    console.log(m, 'метри це', km, 'кілометри')
+} else {
+    console.log(m, 'метрів це', km, 'кілометрів')
+}
