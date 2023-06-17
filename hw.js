@@ -72,24 +72,42 @@ if(season == 0){
 //     Використати вкладені оператори if
 //     Результат виводити в консоль.
 
-// let a = 4;
-// let b = 8;
-// let c = 6;
+let a = 1;
+let b = 2;
+let c = 3;
 
-// if(a > b && a < c){
-//     if(b < c){
-//         console.log(a)
-//     }}else if(a < b && a < c){
-//         if(b > c){
-//             console.log(c)
-//         }
-//     }
-//     abc
-//     acb
-//     bac
-//     bca
-//     cab
-//     cba
+if(a == b || b == c || a == c){
+    console.log('out of scope')
+}else if(a < c){
+    if(a < b){
+    
+        if(b < c){
+            console.log(b)
+        }else if(b > c){
+            console.log(c)
+        }
+    }else if(a > b){
+        console.log(a)
+    }
+}else if(c < a){
+    if(b < a){
+        if(b < c){
+            console.log(c)
+        }else if(b > c){
+            console.log(b)
+        }
+
+    }else if(b > a){
+        console.log(a)
+    }
+}
+    
+//     abc: a менше б, a менше с, б менше с
+    // acb: a менше с, с менше б, б більше а
+    // bac: б менше а, а менше с, б менше с
+    // bca: б менше с, с менше а
+    // cab: с менше а, а менше б
+    // cba: с менше б, б менше а
 
 // 6.  Задано номер дня тижня.
 //     За заданим номером вивести назву дня тижня використовуючи switch.
