@@ -148,7 +148,31 @@ switch(weekDay){
 //     Математичні операції для обчислення: "+", "-", "*", "/".
 //     Результат виводити в консоль.
 
+// let nr1 = 1;
+// let nr2 = 2;
+// let expression = '+' || '-' || '*' ||'/';
+
+// switch(nr1, nr2){
+//     case nr1 + nr2:
+//         console.log(expression);
+//         break;
+//     // case operator = '-':
+//     //         console.log('-');
+//     //         break;
+//     // case operator = '*':
+//     //         console.log('*');
+//     //         break;
+//     // case operator = '/':
+//     //         console.log('/');
+//     //         break;
+// }
+
 // 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
+
+let vowels = 'Hello';
+console.log(vowels.replace(/[aeiou]/g, ''))
+
+
 
 // 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
 //     так щоб в консоль виводився результат обчислень з правильним закінченням.
