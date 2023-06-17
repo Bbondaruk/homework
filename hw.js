@@ -72,6 +72,12 @@ if(season == 0){
 //     Використати вкладені оператори if
 //     Результат виводити в консоль.
 
+//     abc: a менше б, a менше с, б менше с
+    // acb: a менше с, с менше б, б більше а
+    // bac: б менше а, а менше с, б менше с
+    // bca: б менше с, с менше а
+    // cab: с менше а, а менше б
+    // cba: с менше б, б менше а
 let a = 1;
 let b = 2;
 let c = 3;
@@ -102,20 +108,40 @@ if(a == b || b == c || a == c){
     }
 }
     
-//     abc: a менше б, a менше с, б менше с
-    // acb: a менше с, с менше б, б більше а
-    // bac: б менше а, а менше с, б менше с
-    // bca: б менше с, с менше а
-    // cab: с менше а, а менше б
-    // cba: с менше б, б менше а
 
 // 6.  Задано номер дня тижня.
 //     За заданим номером вивести назву дня тижня використовуючи switch.
 //     Результат виводити в консоль.
 
-// let weekDay
+let weekDay = 3
 
-// switch(weekDay);
+switch(weekDay){
+    case 1:
+    console.log('Monday');
+    break;
+    case 2:
+        console.log('Tuesday');
+    break;
+    case 3:
+        console.log('Wednesday');
+    break;
+    case 4:
+        console.log('Thursday');
+    break;
+    case 5:
+        console.log('Friday');
+    break;
+    case 6:
+        console.log('Saturday');
+    break;
+    case 7:
+        console.log('Sunday');
+    break;
+    // case 7 < weekDay:
+    // console.log('Monday');
+    // break;
+
+}
 
 
 // 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
