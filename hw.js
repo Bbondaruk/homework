@@ -113,33 +113,33 @@ if(a == b || b == c || a == c){
 //     За заданим номером вивести назву дня тижня використовуючи switch.
 //     Результат виводити в консоль.
 
-let weekDay = 3
+let weekDay = 5;
 
-switch(weekDay){
+switch (weekDay) {
     case 1:
-    console.log('Monday');
-    break;
+        console.log('Monday');
+        break;
     case 2:
         console.log('Tuesday');
-    break;
+        break;
     case 3:
         console.log('Wednesday');
-    break;
+        break;
     case 4:
         console.log('Thursday');
-    break;
+        break;
     case 5:
         console.log('Friday');
-    break;
+        break;
     case 6:
         console.log('Saturday');
-    break;
+        break;
     case 7:
         console.log('Sunday');
-    break;
-    // case 7 < weekDay:
-    // console.log('Monday');
-    // break;
+        break;
+
+    default:
+        console.log('Not a weekday');
 
 }
 
@@ -148,30 +148,34 @@ switch(weekDay){
 //     Математичні операції для обчислення: "+", "-", "*", "/".
 //     Результат виводити в консоль.
 
-// let nr1 = 1;
-// let nr2 = 2;
-// let expression = '+' || '-' || '*' ||'/';
+let nr1 = 1;
+let nr2 = 2;
+let operator = '4';
 
-// switch(nr1, nr2){
-//     case nr1 + nr2:
-//         console.log(expression);
-//         break;
-//     // case operator = '-':
-//     //         console.log('-');
-//     //         break;
-//     // case operator = '*':
-//     //         console.log('*');
-//     //         break;
-//     // case operator = '/':
-//     //         console.log('/');
-//     //         break;
-// }
+switch(operator){
+    case '+':
+        console.log(nr1 + nr2);
+        break;
+    case '-':
+            console.log(nr1 - nr2);
+            break;
+    case '*':
+            console.log(nr1 * nr2);
+            break;
+    case '/':
+            console.log(nr1 / nr2);
+            break;
+    case '%':
+            console.log(nr1 % nr2);
+            break;
+    default: 
+            console.log('Out of scope')
+}
 
 // 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 
 let vowels = 'Hello';
 console.log(vowels.replace(/[aeiou]/g, ''))
-
 
 
 // 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
